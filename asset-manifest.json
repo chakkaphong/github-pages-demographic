@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/github-pages-demographic/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/github-pages-demographic/static/js/main.4f06753f.chunk.js",
+    "main.js.map": "/github-pages-demographic/static/js/main.4f06753f.chunk.js.map",
+    "runtime-main.js": "/github-pages-demographic/static/js/runtime-main.eb6f7032.js",
+    "runtime-main.js.map": "/github-pages-demographic/static/js/runtime-main.eb6f7032.js.map",
+    "static/js/2.cdee2fc6.chunk.js": "/github-pages-demographic/static/js/2.cdee2fc6.chunk.js",
+    "static/js/2.cdee2fc6.chunk.js.map": "/github-pages-demographic/static/js/2.cdee2fc6.chunk.js.map",
+    "index.html": "/github-pages-demographic/index.html",
+    "precache-manifest.05f7d2b02bcb07430c989876cd875cb5.js": "/github-pages-demographic/precache-manifest.05f7d2b02bcb07430c989876cd875cb5.js",
+    "service-worker.js": "/github-pages-demographic/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/github-pages-demographic/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.cdee2fc6.chunk.js.LICENSE.txt": "/github-pages-demographic/static/js/2.cdee2fc6.chunk.js.LICENSE.txt",
+    "static/media/babies.jpg": "/github-pages-demographic/static/media/babies.b0c0d4a1.jpg",
+    "static/media/co2.jpg": "/github-pages-demographic/static/media/co2.acfdf77d.jpg",
+    "static/media/density.jpg": "/github-pages-demographic/static/media/density.52791f27.jpg",
+    "static/media/energy_sector.jpg": "/github-pages-demographic/static/media/energy_sector.2e60d0ee.jpg",
+    "static/media/grand.jpg": "/github-pages-demographic/static/media/grand.c19a5b2f.jpg",
+    "static/media/pm2.jpg": "/github-pages-demographic/static/media/pm2.3df65bd9.jpg",
+    "static/media/urban-rural.jpg": "/github-pages-demographic/static/media/urban-rural.07bab21d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb6f7032.js",
+    "static/js/2.cdee2fc6.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.4f06753f.chunk.js"
+  ]
+}
