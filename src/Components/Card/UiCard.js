@@ -70,3 +70,6 @@ const UiCard = ({ data }) => {
   );
 };
 export default React.memo(UiCard)
+
+
+     
