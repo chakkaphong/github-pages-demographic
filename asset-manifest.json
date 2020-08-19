@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/github-pages-demographic/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/github-pages-demographic/static/js/main.9502e167.chunk.js",
-    "main.js.map": "/github-pages-demographic/static/js/main.9502e167.chunk.js.map",
+    "main.js": "/github-pages-demographic/static/js/main.5665f713.chunk.js",
+    "main.js.map": "/github-pages-demographic/static/js/main.5665f713.chunk.js.map",
     "runtime-main.js": "/github-pages-demographic/static/js/runtime-main.eb6f7032.js",
     "runtime-main.js.map": "/github-pages-demographic/static/js/runtime-main.eb6f7032.js.map",
-    "static/js/2.9887e4eb.chunk.js": "/github-pages-demographic/static/js/2.9887e4eb.chunk.js",
-    "static/js/2.9887e4eb.chunk.js.map": "/github-pages-demographic/static/js/2.9887e4eb.chunk.js.map",
+    "static/js/2.6cd385b7.chunk.js": "/github-pages-demographic/static/js/2.6cd385b7.chunk.js",
+    "static/js/2.6cd385b7.chunk.js.map": "/github-pages-demographic/static/js/2.6cd385b7.chunk.js.map",
     "index.html": "/github-pages-demographic/index.html",
-    "precache-manifest.f72c64226cc73d34cacbdc1f105f6e83.js": "/github-pages-demographic/precache-manifest.f72c64226cc73d34cacbdc1f105f6e83.js",
+    "precache-manifest.fa876aaca8273c592d24452ceb5504c5.js": "/github-pages-demographic/precache-manifest.fa876aaca8273c592d24452ceb5504c5.js",
     "service-worker.js": "/github-pages-demographic/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/github-pages-demographic/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.9887e4eb.chunk.js.LICENSE.txt": "/github-pages-demographic/static/js/2.9887e4eb.chunk.js.LICENSE.txt",
+    "static/js/2.6cd385b7.chunk.js.LICENSE.txt": "/github-pages-demographic/static/js/2.6cd385b7.chunk.js.LICENSE.txt",
     "static/media/babies.jpg": "/github-pages-demographic/static/media/babies.b0c0d4a1.jpg",
     "static/media/co2.jpg": "/github-pages-demographic/static/media/co2.acfdf77d.jpg",
     "static/media/density.jpg": "/github-pages-demographic/static/media/density.52791f27.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eb6f7032.js",
-    "static/js/2.9887e4eb.chunk.js",
+    "static/js/2.6cd385b7.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.9502e167.chunk.js"
+    "static/js/main.5665f713.chunk.js"
   ]
 }
