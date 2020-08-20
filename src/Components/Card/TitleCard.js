@@ -18,18 +18,38 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-around",
   },
+  typography:{
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '1rem',
+    },
+  },
   detail: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    [theme.breakpoints.down("sm")]: {
-      backgroundColor: green[500],
-    },
   },
 }));
 
-const TitleCard = ({ titleDetail }) => {
-  const classes = useStyles();
+
+function CalculatePopulation(number){
+  const Population = {
+    population:0,
+    unit:""
+  }
+  if(number < 1 && number !== null){
+    Population.population = parseFloat(number)*1000;
+    Population.unit = "K";
+  }else{
+    Population.population =  parseFloat(number).toFixed(1);
+    Population.unit = "M";
+  }
+ return Population
+}
+
+const TitleCard = ({ titleDetail, cityContent }) => {
+
+  const Population = CalculatePopulation(titleDetail.Population);
+   const classes = useStyles();
   return (
     <Box py={1}>
       <Card bgcolor="primary">
@@ -38,44 +58,35 @@ const TitleCard = ({ titleDetail }) => {
             <Typography gutterBottom variant="h3" color="primary">
               {titleDetail.Name}
             </Typography>
-            <Typography variant="body2" color="textSecondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+            <Typography variant="subtitle2" color="textSecondary" >
+            {cityContent && <div dangerouslySetInnerHTML={{ __html: cityContent }} />}
               {Math.random()}
             </Typography>
           </CardContent>
         </CardActionArea>
         <div className={classes.content}>
           <CardContent className={classes.detail}>
-            <Typography gutterBottom variant="h5" color="textSecondary">
+            <Typography gutterBottom variant="h5" color="textSecondary" className={classes.typography}>
               Population
             </Typography>
-            <Typography variant="h4" color="primary">
-              {`${titleDetail.Population}M`}
+            <Typography variant="h4" color="primary" className={classes.typography}>
+              {`${Population.population}${Population.unit}`}
             </Typography>
           </CardContent>
           <CardContent className={classes.detail}>
-            <Typography gutterBottom variant="h5" color="textSecondary">
+            <Typography gutterBottom variant="h5" color="textSecondary" className={classes.typography}>
               Median Age
             </Typography>
-            <Typography variant="h4" color="primary">
+            <Typography variant="h4" color="primary" className={classes.typography}>
               {`${titleDetail.MedianAge} Year`}
             </Typography>
           </CardContent>
           <CardContent className={classes.detail}>
-            <Typography gutterBottom variant="h5" color="textSecondary">
+            <Typography gutterBottom variant="h5" color="textSecondary" className={classes.typography}>
               Density
             </Typography>
-            <Typography variant="h4" color="primary">
+            <Typography variant="h4" color="primary" className={classes.typography}>
               {`${titleDetail.Density} sq. km`}
-            </Typography>
-          </CardContent>
-          <CardContent className={classes.detail}>
-            <Typography gutterBottom variant="h5" color="textSecondary">
-              GlobalRank
-            </Typography>
-            <Typography variant="h4" color="primary">
-              20
             </Typography>
           </CardContent>
         </div>

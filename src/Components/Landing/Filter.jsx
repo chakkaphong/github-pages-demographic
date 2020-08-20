@@ -169,7 +169,7 @@ const Filter = ({ provinceList, onChang }) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Persistent drawer
+            Demographic
           </Typography>
         </Toolbar>
       </AppBar>

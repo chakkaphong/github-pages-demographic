@@ -20,7 +20,7 @@ const TimeSeries = ({ data }) => {
 
   const series = [
     {
-      name: "XYZ MOTORS",
+      name: data.IndicatorName,
       data: Series,
     },
   ];

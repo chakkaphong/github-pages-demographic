@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Grid, Box } from "@material-ui/core";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
 
 import UiCard from "../Card/UiCard";
 import TitleData from "../Card/TitleData";
 import Filter from "./Filter";
-import { createMuiTheme } from "@material-ui/core/styles";
-import { ThemeProvider } from "@material-ui/styles";
+import PyramidData from "../Card/PyramidData";
+import Breadcrumb from "../Card/Breadcrumb";
 
 const theme = createMuiTheme({
   palette: {
@@ -30,8 +32,13 @@ export default ({ nationData, provinceList }) => {
   const [provinceData, setProvinceData] = useState([]);
   const [isLoad, setIsLoad] = useState(true);
 
+  const thailandData = useMemo(() =>{
+    return nationData
+  },[]);
+
+  
   useEffect(() => {
-    console.log(province);
+    console.log(isLoad);
     let data = provinceList.filter((val) => val.Province === province);
     setProvinceData(data);
     setIsLoad(false);
@@ -48,37 +55,44 @@ export default ({ nationData, provinceList }) => {
           <Box py={12}>
             <Grid container alignItems="center" justify="center" spacing={3}>
               <Grid item xs={12} xl={7} lg={7} md={10} sm={12} spaceing={10}>
+                <Breadcrumb
+                  province={province}
+                  onChang={(value) => setProvince(value)}
+                />
+              </Grid>
+              <Grid item xs={12} xl={7} lg={7} md={10} sm={12} spaceing={10}>
                 {isLoad ? (
                   <div>load.....</div>
                 ) : (
-                  <TitleData
-                    provinceList={provinceList}
-                    provinceData={provinceData}
-                  />
+                  <TitleData provinceData={provinceData} />
                 )}
               </Grid>
-              {nationData
-                .filter(
-                  (data) =>
-                    data.IndicatorName !== "Urban_population" &&
-                    data.IndicatorName !== "Rural_population" &&
-                    data.IndicatorName !== "Population_density" &&
-                    data.IndicatorName !== "Survival_to_age_65_female" &&
-                    data.IndicatorName !== "Survival_to_age65Male"
-                )
-                .map((data) => (
-                  <Grid
-                    item
-                    xs={12}
-                    xl={7}
-                    lg={7}
-                    md={10}
-                    sm={12}
-                    key={data.IndicatorName}
-                  >
-                    <UiCard data={data} />
-                  </Grid>
-                ))}
+              <Grid item xs={12} xl={7} lg={7} md={10} sm={12} spaceing={10}>
+                {isLoad ? null : <PyramidData provinceData={provinceData} />}
+              </Grid>
+              {province === "Thailand" &&
+                thailandData
+                  .filter(
+                    (data) =>
+                      data.IndicatorName !== "Urban_population" &&
+                      data.IndicatorName !== "Rural_population" &&
+                      data.IndicatorName !== "Population_density" &&
+                      data.IndicatorName !== "Survival_to_age_65_female" &&
+                      data.IndicatorName !== "Survival_to_age65Male"
+                  )
+                  .map((data) => (
+                    <Grid
+                      item
+                      xs={12}
+                      xl={7}
+                      lg={7}
+                      md={10}
+                      sm={12}
+                      key={data.IndicatorName}
+                    >
+                      <UiCard data={data} />
+                    </Grid>
+                  ))}
             </Grid>
           </Box>
         </Box>
