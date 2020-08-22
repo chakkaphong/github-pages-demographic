@@ -72,8 +72,8 @@ const Pyramid = ({ total, male, female }) => {
       },
     },
     yaxis: {
-      min: -Yaxis*1.2,
-      max: Yaxis*1.2,
+      min: -Yaxis,
+      max: Yaxis,
       forceNiceScale: true,
       floating: false,
       title: {

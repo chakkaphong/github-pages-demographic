@@ -53,7 +53,7 @@ export default ({ data }) => {
   };
 
   return (
-    <ReactApexChart
+      <ReactApexChart
       options={options}
       series={series}
       type="line"

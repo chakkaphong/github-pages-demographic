@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
 import HomeIcon from "@material-ui/icons/Home";
-import GrainIcon from "@material-ui/icons/Grain";
+import LocationCity from "@material-ui/icons/LocationCity";
 
 const useStyles = makeStyles((theme) => ({
   link: {
@@ -34,7 +34,7 @@ const Breadcrumb = ({ province, onChang }) => {
         </Link>
         {province !== "Thailand" ? (
           <Typography color="secondary" className={classes.link}>
-            <GrainIcon className={classes.icon} />
+            <LocationCity className={classes.icon} />
             {province}
           </Typography>
         ) : null}

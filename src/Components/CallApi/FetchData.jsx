@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Ladning from "../Landing";
+import Skeloton from '../skeleton/Skeloton'
 const FetchData = () => {
   const [provinceList, setProvince] = useState([]);
   const [nationData, setNationData] = useState([]);
@@ -31,7 +32,7 @@ const FetchData = () => {
   }, []);
   return (
     <div>
-      {isLoad ? <div>Loading...</div> : <Ladning nationData={nationData} provinceList={provinceList} />}
+      {isLoad ? <Skeloton /> : <Ladning nationData={nationData} provinceList={provinceList} />}
     </div>
   );
 };

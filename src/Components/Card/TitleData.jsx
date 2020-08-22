@@ -54,7 +54,7 @@ const TitleData = ({ provinceData }) => {
     [provinceData],
     [titleDetail]
   );
-  return <TitleCard titleDetail={titleDetail} cityContent={cityContent} />;
+  return <TitleCard titleDetail={titleDetail} cityContent={cityContent} handleClick={false} />;
 };
 
 export default TitleData;

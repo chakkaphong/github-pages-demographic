@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Footer } from "./Components/Layout";
+import { Header, Footer } from "./Components/Layout";
 import FetchData from './Components/CallApi/FetchData'
 
 const Contianer = styled.div`
@@ -15,6 +15,7 @@ const Contianer = styled.div`
 function App() {
   return (
     <Contianer>
+      <Header />
       <FetchData />
       <Footer />
     </Contianer>
