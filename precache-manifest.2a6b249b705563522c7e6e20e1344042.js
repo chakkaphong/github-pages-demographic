@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd25ddb0845d7fc64de613982849ba13",
+    "revision": "9785f7cd9dc73f2d145b012ebbb45e1f",
     "url": "/github-pages-demographic/index.html"
   },
   {
-    "revision": "f9a1ce0a59abec579444",
+    "revision": "0668b71884025e30d6dc",
     "url": "/github-pages-demographic/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "9f2381a68acbf2e76591",
-    "url": "/github-pages-demographic/static/js/2.9d3b897c.chunk.js"
+    "revision": "a4f27407101c4f9c8c93",
+    "url": "/github-pages-demographic/static/js/2.21a03595.chunk.js"
   },
   {
     "revision": "db2b5a09fce9ca2140fbc2dd94636626",
-    "url": "/github-pages-demographic/static/js/2.9d3b897c.chunk.js.LICENSE.txt"
+    "url": "/github-pages-demographic/static/js/2.21a03595.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9a1ce0a59abec579444",
-    "url": "/github-pages-demographic/static/js/main.97399fbc.chunk.js"
+    "revision": "0668b71884025e30d6dc",
+    "url": "/github-pages-demographic/static/js/main.77641a9a.chunk.js"
   },
   {
     "revision": "caae674dc5b3c4229ecb",
