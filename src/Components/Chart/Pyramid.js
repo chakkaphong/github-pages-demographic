@@ -58,7 +58,7 @@ const Pyramid = ({ total, male, female }) => {
         fontSize: "9px",
         colors: ["#333"],
       },
-      offsetX: 30,
+      offsetX: 40,
     },
     stroke: {
       width: 1,

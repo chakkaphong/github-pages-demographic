@@ -61,7 +61,7 @@ const UiCard = ({ data }) => {
                 </Typography>
           </Box>
           <Typography variant="body1" color="text.primary">
-            {data.paragraph}{Math.random()}
+            {data.paragraph}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -10,11 +10,14 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(2),
     },
   },
-  button: {
+  buttons: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "flex-start",
     padding: theme.spacing(5),
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(0),
+    },
   },
 }));
 
@@ -86,7 +89,7 @@ const TimeSeries = ({ data }) => {
       name: data.IndicatorName,
       data: selectSeries,
     },
-  ]
+  ];
   const options = {
     chart: {
       type: "area",
@@ -138,39 +141,39 @@ const TimeSeries = ({ data }) => {
 
   return (
     <React.Fragment>
-      <div className={classes.button}>
+      <div className={classes.buttons}>
         <Box mr={1}>
           <Button
             variant={active === "5" ? "contained" : "outlined"}
-            size="medium"
+            size="small"
             color="primary"
             className={classes.margin}
             onClick={() => setActive("5")}
           >
-            5Year
+            5Y
           </Button>
         </Box>
         <Box mr={1}>
           <Button
             variant={active === "10" ? "contained" : "outlined"}
-            size="medium"
+            size="small"
             color="primary"
             className={classes.margin}
             onClick={() => setActive("10")}
           >
-            10Year
+            10Y
           </Button>
         </Box>
         {seriesLength > 21 && (
           <Box mr={1}>
             <Button
               variant={active === "20" ? "contained" : "outlined"}
-              size="medium"
+              size="small"
               color="primary"
               className={classes.margin}
               onClick={() => setActive("20")}
             >
-              20Year
+              20Y
             </Button>
           </Box>
         )}
@@ -178,19 +181,19 @@ const TimeSeries = ({ data }) => {
           <Box mr={1}>
             <Button
               variant={active === "30" ? "contained" : "outlined"}
-              size="medium"
+              size="small"
               color="primary"
               className={classes.margin}
               onClick={() => setActive("30")}
             >
-              30Year
+              30Y
             </Button>
           </Box>
         )}
         <Box mr={1}>
           <Button
             variant={active === "all" ? "contained" : "outlined"}
-            size="medium"
+            size="small"
             color="primary"
             className={classes.margin}
             onClick={() => setActive("all")}

@@ -11,13 +11,13 @@ const useStyles = makeStyles({
   },
 });
 
-const CardPyramid = ({ total, male, female }) => {
+const CardPyramid = ({ total, male, female, provinceName}) => {
    const classes = useStyles();
   return (
     <Card className={classes.root}>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Pyramid Population of 
+          <Typography gutterBottom variant="h5" component="h2" >
+          Pyramid Population of <b>{provinceName}</b>
           </Typography>
         </CardContent>
         <CardContent>

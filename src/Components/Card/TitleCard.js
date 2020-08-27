@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { Box } from "@material-ui/core";
+import { Box, Collapse } from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
-import ShowMoreText from "react-show-more-text";
+import IconButton from "@material-ui/core/IconButton";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +19,20 @@ const useStyles = makeStyles((theme) => ({
   content: {
     display: "flex",
     justifyContent: "space-around",
+  },
+  expand: {
+    transform: "rotate(0deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: "rotate(180deg)",
+  },
+  expandPosition: {
+    display: "flex",
+    justifyContent: "flex-end",
   },
   typography: {
     [theme.breakpoints.down("sm")]: {
@@ -30,11 +46,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function CalculatePopulation(number) {
   const Population = {
     population: 0,
     unit: "",
   };
+function CalculatePopulation(number) {
+  
+  if(number === null || number.length === 0 ) return null;
   if (number < 1 && number !== null) {
     Population.population = parseFloat(number) * 1000;
     Population.unit = "K";
@@ -45,20 +63,22 @@ function CalculatePopulation(number) {
   return Population;
 }
 
-const TitleCard = ({ titleDetail, cityContent, handleClick }) => {
+const TitleCard = ({ titleDetail, cityContent }) => {
   const Population = CalculatePopulation(titleDetail.Population);
-  const [expand, setExpand] = useState(false);
-  const number = Math.random();
-  const onClick = () => {
-    setExpand(!expand);
-  };
-  useEffect(() => {
-    onClick();
-    return () => {
-      setExpand(false);
-    };
-  }, [titleDetail]);
+  const [expanded, setExpanded] = React.useState(false);
   const classes = useStyles();
+
+  React.useEffect(() =>{
+
+
+    return () =>{
+      setExpanded(false);      
+    }
+  },[titleDetail, cityContent])
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
   return (
     <Box py={1}>
       <Card bgcolor="primary">
@@ -66,11 +86,29 @@ const TitleCard = ({ titleDetail, cityContent, handleClick }) => {
           <Typography gutterBottom variant="h3" color="primary">
             {titleDetail.Name}
           </Typography>
-            <Typography variant="subtitle2" align="justify" color="textSecondary">
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Typography
+              variant="subtitle2"
+              align="justify"
+              color="textSecondary"
+            >
               {cityContent && (
                 <div dangerouslySetInnerHTML={{ __html: cityContent }} />
               )}
             </Typography>
+          </Collapse>
+          <div className={classes.expandPosition}>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </div>
         </CardContent>
         <Divider variant="middle" />
         <div className={classes.content}>
