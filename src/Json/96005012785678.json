@@ -1,0 +1,201 @@
+{
+    "Id": "96005012785678",
+    "name": "Gaia Weapon Box",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmQMXuESnXPCLGSz7YqzbKyScMRjUkmJgReAQ8swAv5w51?preview=1",
+    "dna": "1cbba134892a03d5883f17dd36267ec146b3ad8d",
+    "edition": 1,
+    "priceDetail":{
+        "price": 5,
+        "symbol": "BUSD",
+        "amount": 200,
+        "tokenImage": "https://seeklogo.com/images/B/binance-usd-busd-logo-A436FCF6B6-seeklogo.com.png"
+    },
+    "date": 1642131135757,
+    "attributes": [
+        {
+            "trait_type": "common",
+            "value": "Night Greate Sword"
+        },
+        {
+            "trait_type": "uncommon",
+            "value": "Night Greate Sword"
+        },
+        {
+            "trait_type": "rare",
+            "value": "Night Greate Sword"
+        },
+        {
+            "trait_type": "common",
+            "value": "Night Long Sword"
+        },
+        {
+            "trait_type": "uncommon",
+            "value": "Night Long Sword"
+        },
+        {
+            "trait_type": "rare",
+            "value": "Night Long Sword"
+        },
+        {
+            "trait_type": "common",
+            "value": "Night Orb"
+        },
+        {
+            "trait_type": "uncommon",
+            "value": "Night Orb"
+        },
+        {
+            "trait_type": "rare",
+            "value": "Night Orb"
+        },
+        {
+            "trait_type": "common",
+            "value": "Night Book"
+        },
+        {
+            "trait_type": "uncommon",
+            "value": "Night Book"
+        },
+        {
+            "trait_type": "rare",
+            "value": "Night Book"
+        },
+        {
+            "trait_type": "common",
+            "value": "Night Pistol"
+        },
+        {
+            "trait_type": "uncommon",
+            "value": "Night Pistol"
+        },
+        {
+            "trait_type": "rare",
+            "value": "Night Pistol"
+        },
+        {
+            "trait_type": "common",
+            "value": "Night Rifle"
+        },
+        {
+            "trait_type": "uncommon",
+            "value": "Night Rifle"
+        },
+        {
+            "trait_type": "rare",
+            "value": "Night Rifle"
+        },
+        {
+            "trait_type": "common",
+            "value": "Night Knukle"
+        },
+        {
+            "trait_type": "uncommon",
+            "value": "Night Knukle"
+        },
+        {
+            "trait_type": "rare",
+            "value": "Night Knukle"
+        },
+        {
+            "trait_type": "common",
+            "value": "Night Dagger"
+        },
+        {
+            "trait_type": "uncommon",
+            "value": "Night Dagger"
+        },
+        {
+            "trait_type": "rare",
+            "value": "Night Dagger"
+        },
+        {
+            "trait_type": "Rarity Rank (#1 Rarest)",
+            "value": 3,
+            "max_value": 5
+        }
+    ],
+    "Available": [
+        {
+            "index": 1,
+            "name": "Night Dagger",
+            "path": "https://gateway.pinata.cloud/ipfs/QmP4WrrbGG5AGc2TFsoz87Vo8PsR5eBSf17TCV6kC3Yimj?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 2,
+            "name": "Night Knukle",
+            "path": "https://gateway.pinata.cloud/ipfs/QmcQNeab2wGAhrQVBg5P4qx449G6uZ8opBiorbXURHXoTf?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 3,
+            "name": "Night Shield",
+            "path": "https://gateway.pinata.cloud/ipfs/QmbxuYwRy7E2szdQ5G25MoEYwPgP3pbfVM1ripaZHMG59K?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 4,
+            "name": "Night Rifle",
+            "path": "https://gateway.pinata.cloud/ipfs/QmezU8KET5oHs6Ax2AKzacoTdKz2t3G1FtvWzuuJJpy97b?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 5,
+            "name": "Night Long Sword",
+            "path": "https://gateway.pinata.cloud/ipfs/Qmeg6k6MhN8GbsfaMrQdjYzpXdtsiHB9MK3LVDaLaiV9Ba?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 6,
+            "name": "Night Pistol",
+            "path": "https://gateway.pinata.cloud/ipfs/QmPNz23SNshDq3jbzdoFBj1pKwZjNow8Xx8ejdfhhRURYQ?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 7,
+            "name": "Night Book",
+            "path": "https://gateway.pinata.cloud/ipfs/QmfVn7EqHHG8h6cBP27PLHqvsERF2XLBKf7cDKPdbq7PV9?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 8,
+            "name": "Night Great Sword",
+            "path": "https://gateway.pinata.cloud/ipfs/QmWiwGYPV9wL6JL32gBkX2RkE5kYSGniV8abEp2XG5BcRc?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 9,
+            "name": "Night Orb",
+            "path": "https://gateway.pinata.cloud/ipfs/QmXu3Rj5VwgD2ESqnMEhbNN3S4tzykkvTqTGvdzoNXFN1n?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        },
+        {
+            "index": 9,
+            "name": "Night Long Swrod(hide)",
+            "path": "https://gateway.pinata.cloud/ipfs/QmdY9cadRdJNYFY2TexhYxPi4786jyMAZiAGRbLpp4UJYV?preview=1",
+            "minted": 20,
+            "Available": 20,
+            "dropRate": 10
+        }
+    ],
+    "score": 38.25
+}
